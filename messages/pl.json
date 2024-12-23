@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": {
+      "firstPart": "Cześć, jestem <cover></cover>",
+      "name": "Piotr Śliwka",
+      "secondPart": "Zbudujmy razem dobre oprogramowanie"
+    },
+    "subtitle": "Jest to strona z moim portfolio i listą produktów, które mogę dla ciebie zbudować"
+  },
+  "nav": {
+    "leftSide": {
+      "element1": "Home",
+      "element2": "Oferty",
+      "element3": "O mnie",
+      "element4": "Kontakt"
+    }
+  }
+}

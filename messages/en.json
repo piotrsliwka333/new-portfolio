@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": {
+      "firstPart": "Hi, I'm <cover></cover>",
+      "name": "Peter Sliwka",
+      "secondPart": "Let's build good software togather"
+    },
+    "subtitle": "Here is a website with my portfolio and list of products which I can build for you"
+  },
+  "nav": {
+    "leftSide": {
+      "element1": "Home",
+      "element2": "Offers",
+      "element3": "About Me",
+      "element4": "Contact"
+    }
+  }
+}
