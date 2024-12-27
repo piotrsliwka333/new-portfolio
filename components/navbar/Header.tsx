@@ -14,6 +14,8 @@ import {
 import { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/logo.webp";
+import { Button } from "../elements/button";
+import { NavbarItem } from "./navbar-item";
 
 interface OwnProps {
   header: HeaderResponseType;
@@ -42,22 +44,25 @@ export function Header({ header }: Readonly<OwnProps>) {
     <div className="pt-[0px] xl:pt-[0px] bg-transparent">
       <motion.nav
         className={`${
-          isOpen ? "bg-black" : ""
+          isOpen
+            ? "bg-black"
+            : showBackground
+            ? "bg-backgroundSecondary xl:bg-transparent"
+            : "bg-transparent"
         } flex justify-center top-0 fixed w-full z-50 h-[68px] xl:top-[12px]`}
       >
         {/* mobile nav */}
         <motion.div
           className="w-full mx-auto px-1 sm:px-2 flex items-center transition duration-200  justify-between h-full xl:hidden"
           animate={{
-            width: showBackground ? "95%" : "100%",
-            background:
-              showBackground && !isOpen ? "var(--neutral-900)" : "transparent",
+            // width: showBackground ? "95%" : "100%",
+            background: showBackground && !isOpen ? "#171717" : "transparent",
           }}
           transition={{
             duration: 0.4,
           }}
         >
-          <AnimatePresence>
+          {/* <AnimatePresence>
             {showBackground && !isOpen && (
               <motion.div
                 key={String(showBackground)}
@@ -69,9 +74,13 @@ export function Header({ header }: Readonly<OwnProps>) {
                 className="absolute inset-0 h-full w-full bg-neutral-900 pointer-events-none [mask-image:linear-gradient(to_bottom,white,transparent,white)] rounded-md"
               />
             )}
-          </AnimatePresence>
+          </AnimatePresence> */}
           <div className="flex items-center gap-12 h-full">
-            <Link href="/" className="py-2 pl-4 flex items-center h-full">
+            <Link
+              href="/"
+              onClick={handleClick}
+              className="py-2 pl-4 flex items-center h-full"
+            >
               <Image
                 priority
                 src={Logo}
@@ -118,64 +127,31 @@ export function Header({ header }: Readonly<OwnProps>) {
             </button>
           </div>
           <nav
-            onClick={handleClick}
             className={`bg-black left-0 top-[68px] absolute w-full h-[calc(100vh-68px)] ${
               isOpen ? "" : "hidden"
             }`}
           >
             <ul className="h-full overflow-y-auto p-4">
-              {/* <li className="mb-4">
-                <Link
-                  className="btn-primary flex items-center w-fit"
-                  // eslint-disable-next-line
-                  href={header.button.url as any}
-                  target="_blank"
-                >
-                  <span className="flex items-center mr-3">
-                    {header.button.text}
-                  </span>
-                  <svg
-                    width="15"
-                    height="12"
-                    viewBox="0 0 15 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 6H13M13 6L8.41176 2M13 6L8.41176 10"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </Link>
-              </li> */}
               {header.mainLinks.map((mainLink: MainLink) => (
-                <li key={mainLink.id} className="mb-2">
+                <li key={mainLink.id} className="mb-2" onClick={handleClick}>
                   {/* eslint-disable-next-line */}
-                  <Link
-                    href={mainLink.url as any}
-                    className="mobile-nav-link text-lg"
-                  >
+                  <NavbarItem href={mainLink.url as any} isMobile>
                     <span>{mainLink.text}</span>
-                  </Link>
+                  </NavbarItem>
                   {mainLink.nestedLinks.length > 0 && (
-                    <div className="pl-8">
-                      <ul>
-                        {mainLink.nestedLinks.map((nestedLink: LinkType) => (
-                          <li key={nestedLink.id}>
-                            <Link
-                              className="mobile-nav-link font-light"
-                              // eslint-disable-next-line
-                              href={nestedLink.url as any}
-                            >
-                              {nestedLink.text}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    <ul className="pl-8">
+                      {mainLink.nestedLinks.map((nestedLink: LinkType) => (
+                        <li key={nestedLink.id}>
+                          <NavbarItem
+                            // eslint-disable-next-line
+                            href={nestedLink.url as any}
+                            isMobile
+                          >
+                            {nestedLink.text}
+                          </NavbarItem>
+                        </li>
+                      ))}
+                    </ul>
                   )}
                 </li>
               ))}
@@ -185,16 +161,16 @@ export function Header({ header }: Readonly<OwnProps>) {
 
         {/* desktop nav */}
         <motion.div
-          className="hidden xl:flex w-full mx-auto max-w-[1544px] px-2 2xl:px-4 flex items-center justify-between relative h-full"
+          className="hidden xl:flex w-full mx-auto max-w-[1544px] px-2 2xl:px-4 flex items-center justify-between relative h-full rounded-md"
           animate={{
             width: showBackground ? "70%" : "100%",
-            background: showBackground ? "var(--neutral-900)" : "transparent",
+            background: showBackground ? "#171717" : "transparent",
           }}
           transition={{
-            duration: 0.7,
+            duration: 0.4,
           }}
         >
-          <AnimatePresence>
+          {/* <AnimatePresence>
             {showBackground && (
               <motion.div
                 key={String(showBackground)}
@@ -203,10 +179,10 @@ export function Header({ header }: Readonly<OwnProps>) {
                 transition={{
                   duration: 1,
                 }}
-                className="absolute inset-0 h-full w-full bg-neutral-900 pointer-events-none [mask-image:linear-gradient(to_bottom,white,transparent,white)] rounded-md"
+                className="absolute h-full w-full bg-neutral-900 pointer-events-none [mask-image:linear-gradient(to_bottom,white,transparent,white)] rounded-md"
               />
             )}
-          </AnimatePresence>
+          </AnimatePresence> */}
           <div className="flex items-center gap-12 h-full">
             <Link href="/" className="py-2 flex items-center h-full">
               <Image
@@ -230,7 +206,46 @@ export function Header({ header }: Readonly<OwnProps>) {
                 {header.mainLinks.map((mainLink: MainLink) => (
                   <li key={mainLink.id} className="h-full">
                     {/* eslint-disable-next-line */}
-                    <Link className="nav-link" href={mainLink.url as any}>
+                    <NavbarItem href={mainLink.url as any}>
+                      <span className="flex items-center relative">
+                        <span
+                          className={` ${
+                            mainLink.nestedLinks.length > 0
+                              ? "inline-block mr-2"
+                              : ""
+                          }`}
+                        >
+                          {mainLink.text}
+                        </span>
+                        {mainLink.nestedLinks.length > 0 && (
+                          <svg
+                            className=""
+                            width="8"
+                            height="5"
+                            viewBox="0 0 8 5"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clipPath="url(#clip0_61_3148)">
+                              <path
+                                d="M7 1L4 4L1 1"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_61_3148">
+                                <rect width="8" height="5" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        )}
+                      </span>
+                    </NavbarItem>
+
+                    {/* <Link className="nav-link" href={mainLink.url as any}>
                       <span className="block relative">
                         {mainLink.text}
                         {mainLink.nestedLinks.length > 0 && (
@@ -259,19 +274,24 @@ export function Header({ header }: Readonly<OwnProps>) {
                           </svg>
                         )}
                       </span>
-                    </Link>
+                    </Link> */}
                     {mainLink.nestedLinks.length > 0 && (
-                      <div className="sub-menu__wrapper">
-                        <ul className="sub-menu">
+                      <div className={`sub-menu__wrapper `}>
+                        <ul
+                          className={`sub-menu ${
+                            showBackground ? "bg-backgroundSecondary" : ""
+                          }`}
+                        >
                           {mainLink.nestedLinks.map((nestedLink: LinkType) => (
                             <li key={nestedLink.id}>
                               {/* eslint-disable-next-line */}
-                              <Link
-                                className="nav-link p-6"
+                              <NavbarItem
+                                isMobile
                                 href={nestedLink.url as any}
+                                className="p-6"
                               >
                                 {nestedLink.text}
-                              </Link>
+                              </NavbarItem>
                             </li>
                           ))}
                         </ul>
@@ -284,7 +304,15 @@ export function Header({ header }: Readonly<OwnProps>) {
           </div>
           <div className="flex items-center">
             <LocaleSwitcher />
-            <Link
+            <Button
+              key={header.button.text}
+              variant={"primary"}
+              as={Link}
+              href={header.button.url as any}
+            >
+              {header.button.text}
+            </Button>
+            {/* <Link
               className="btn-primary flex items-center"
               // eslint-disable-next-line
               href={header.button.url as any}
@@ -308,7 +336,7 @@ export function Header({ header }: Readonly<OwnProps>) {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
       </motion.nav>

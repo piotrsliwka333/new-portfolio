@@ -9,20 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        secondary: {
-          DEFAULT: "var(--secondary)",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        primary: {
-          DEFAULT: "var(--primary)",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        textPrimary: {
-          DEFAULT: "var(--text-primary)",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        primary: "var(--primary)",
+        // secondary: "var(--secondary)",
+        secondary: "#E6E6E6",
+        muted: "var(--neutral-200)",
+        background: "var(--background-primary)",
+        backgroundSecondary: "var(--background-secondary)",
+        textPrimary: "var(--text-primary)",
       },
     },
   },

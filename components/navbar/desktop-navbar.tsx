@@ -60,7 +60,7 @@ export const DesktopNavbar = ({ leftNavbarItems, rightNavbarItems }: Props) => {
         {/* <Logo locale={locale} image={logo?.image} /> */}
         <div className="flex items-center gap-1.5">
           {leftNavbarItems.map((item) => (
-            <NavbarItem href={item.URL} key={item.text} target={item.target}>
+            <NavbarItem href={item.URL} key={item.text}>
               {item.text}
             </NavbarItem>
           ))}
