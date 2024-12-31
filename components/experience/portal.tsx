@@ -2,10 +2,13 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import Modal from "./modal";
 import { Button } from "../elements/button";
+import { useTranslations } from "next-intl";
 
 export default function Portal(props: OwnProps) {
   const { description } = props;
   const [showModal, setShowModal] = useState(false);
+
+  const t = useTranslations("shared.buttons");
   return (
     <>
       <Button
@@ -13,7 +16,7 @@ export default function Portal(props: OwnProps) {
         onClick={() => setShowModal(true)}
         className="mt-8 md:hidden"
       >
-        Show Responsibilities
+        {t("showResponsibilities")}
       </Button>
       {showModal &&
         createPortal(

@@ -21,11 +21,6 @@ export const Experience = () => {
           workDimension: t("job1.positions.position1.workDimension"),
           period: t("job1.positions.position1.period"),
         },
-        {
-          name: t("job1.positions.position1.name"),
-          workDimension: t("job1.positions.position1.workDimension"),
-          period: t("job1.positions.position1.period"),
-        },
       ],
       description: {
         title: t("job1.description.title"),
@@ -43,11 +38,6 @@ export const Experience = () => {
           name: t("job2.positions.position1.name"),
           workDimension: t("job2.positions.position1.workDimension"),
           period: t("job2.positions.position1.period"),
-        },
-        {
-          name: t("job2.positions.position2.name"),
-          workDimension: t("job2.positions.position2.workDimension"),
-          period: t("job2.positions.position2.period"),
         },
         {
           name: t("job2.positions.position2.name"),

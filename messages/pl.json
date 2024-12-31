@@ -1,4 +1,9 @@
 {
+  "shared": {
+    "buttons": {
+      "showResponsibilities": "Pokaż Zakres Obowiązków"
+    }
+  },
   "home": {
     "hero": {
       "title": {
@@ -9,51 +14,51 @@
       "subtitle": "Jest to strona z moim portfolio i listą produktów, które mogę dla ciebie zbudować"
     },
     "experience": {
-      "title": "Professional Experience",
-      "subtitle": "Companies for which I’ve worked and responsibilities which I had",
+      "title": "Moje Doświadczenie Zawodowe",
+      "subtitle": "Firmy, dla których pracowałem i obowiązki, które miałem",
       "job1": {
         "name": "PEOPLE MORE",
-        "totalWorkTime": "4 mos",
-        "address": "Wrocław, Lower Silesian, Poland",
+        "totalWorkTime": "4 msc",
+        "address": "Wrocław, Dolnyśląsk, Polska",
         "positions": {
           "position1": {
             "name": "Frontend Developer",
-            "workDimension": "Full time",
-            "period": "01.2024 - 04.2024  4 mos"
+            "workDimension": "Pełen etat",
+            "period": "01.2024 - 04.2024  4 msc"
           }
         },
         "description": {
-          "title": "Job responsibility at PeopleMore:",
-          "point1": "Creating from scratch new trading platform using React + Typescript and Material UI."
+          "title": "Zakres obwiązków w PeopleMore:",
+          "point1": "Stworzenie od podstaw nowej Platformy Trandingowej z wykorzystaniem React + Typescript i Material UI."
         }
       },
       "job2": {
         "name": "Virtua",
-        "totalWorkTime": "3 yrs",
-        "address": "Wrocław, Lower Silesian, Poland",
+        "totalWorkTime": "3 lata",
+        "address": "Wrocław, Dolnyśląsk, Polska",
         "positions": {
           "position1": {
-            "name": "Frontend Internship",
-            "workDimension": "Full time",
-            "period": "07.2020 - 09.2020  3 mos"
+            "name": "Frontend Staż",
+            "workDimension": "Pełen etat",
+            "period": "07.2020 - 09.2020  3 msc"
           },
           "position2": {
             "name": "Frontend Developer",
-            "workDimension": "Full time",
-            "period": "10.2020 - 06.2023  2 yrs 9 mos"
+            "workDimension": "Pełen etat",
+            "period": "10.2020 - 06.2023  2 lata 9 msc"
           }
         },
         "description": {
-          "title": "Job responsibility at Virtua Company:",
-          "point1": "Modernization of the application structure",
-          "point2": "Implementing new features",
-          "point3": "Adding types for the app using Typescript (creating inerfaces, typing props etc.)",
-          "point4": "Writing unit tests. Migration from Enzyme to React-testing-library",
-          "point5": "Writing Integration Tests using Testcafe. Tworzenie page models.",
-          "point6": "Application development using React.",
-          "point7": "Daily contact with client from USA. (Working in kanban model).",
-          "point8": "Creating and customization components using Material UI and styled components.",
-          "point9": "Working on app with different envs like: LOCAL, DEV, PROD. "
+          "title": "Zakres obowiązków w Virtua:",
+          "point1": "Modernizacja struktury aplikacji",
+          "point2": "Wdrażanie nowych funkcji",
+          "point3": "Dodawanie typów do aplikacji za pomocą TypeScript (tworzenie interfejsów, typowanie propsów itp.)",
+          "point4": "Pisanie testów jednostkowych. Migracja z Enzyme do React-testing-library",
+          "point5": "Pisanie testów integracyjnych przy użyciu Testcafe. Tworzenie modeli stron.",
+          "point6": "Tworzenie aplikacji z wykorzystaniem React.",
+          "point7": "Codzienny kontakt z klientem z USA. (Praca w modelu kanban).",
+          "point8": "Tworzenie i dostosowywanie komponentów przy użyciu Material UI i styled components.",
+          "point9": "Praca przy aplikacji składającej się z różnych środowisk jak: LOCAL, DEV, PROD."
         }
       }
     }

@@ -41,9 +41,15 @@ export const Card: React.FC<OwnProps> = (props: OwnProps) => {
   }
 
   const ref = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLUListElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,
+    offset: ["end end", "start start"],
+  });
+
+  const { scrollYProgress: secondScrollYProgress } = useScroll({
+    target: ref2,
     offset: ["end end", "start start"],
   });
 
@@ -53,7 +59,7 @@ export const Card: React.FC<OwnProps> = (props: OwnProps) => {
   });
 
   const height = useSpring(useTransform(scrollYProgress, [0, 0.1], [0, 150]), {
-    stiffness: 200,
+    stiffness: 500,
     damping: 90,
   });
 
@@ -88,7 +94,7 @@ export const Card: React.FC<OwnProps> = (props: OwnProps) => {
             <p className="text-neutral-400">{address}</p>
           </div>
 
-          <ul>
+          <ul ref={ref2}>
             {positions.map((position: Position, index: number) => (
               <li
                 key={index}

@@ -1,4 +1,9 @@
 {
+  "shared": {
+    "buttons": {
+      "showResponsibilities": "Show Responsibilities"
+    }
+  },
   "home": {
     "hero": {
       "title": {
@@ -9,7 +14,7 @@
       "subtitle": "Here is a website with my portfolio and list of products which I can build for you"
     },
     "experience": {
-      "title": "Professional Experience",
+      "title": "My Professional Experience",
       "subtitle": "Companies for which I’ve worked and responsibilities which I had",
       "job1": {
         "name": "PEOPLE MORE",

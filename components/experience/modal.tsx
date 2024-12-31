@@ -1,6 +1,8 @@
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { MouseEvent as ReactMouseEvent } from "react";
 import { CanvasRevealEffect } from "../ui/canvas-reveal-effect";
+import { Button } from "../elements/button";
+import { IconX } from "@tabler/icons-react";
 
 export default function Modal(props: OwnProps) {
   const { description, onClose } = props;
@@ -29,16 +31,20 @@ export default function Modal(props: OwnProps) {
       >
         <div
           onClick={onClose}
-          className="fixed inset-0 bg-gray-900/75 transition-opacity"
+          className="fixed inset-0 p-4 flex justify-center items-center bg-gray-900/75 transition-opacity"
           aria-hidden="true"
-        ></div>
-
-        <div className="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] w-full z-10 overflow-y-auto">
-          <div className="flex p-4 justify-center items-center sm:p-8">
+        >
+          <div className="flex sm:p-8">
             <div
-              className=" group p-8 rounded-md border border-neutral-800 bg-neutral-950  relative z-40 "
+              className="group p-8 rounded-md border border-neutral-800 bg-neutral-950  relative z-40 "
               onMouseMove={handleMouseMove}
             >
+              <Button
+                className="absolute right-[10px] top-[10px] z-20 p-2"
+                onClick={onClose}
+              >
+                <IconX className="h-4 w-4 text-black" />
+              </Button>
               <motion.div
                 className="pointer-events-none absolute z-10 -inset-px rounded-md opacity-0 transition duration-300 group-hover:opacity-100"
                 style={{
