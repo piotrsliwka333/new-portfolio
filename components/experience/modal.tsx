@@ -31,7 +31,7 @@ export default function Modal(props: OwnProps) {
       >
         <div
           onClick={onClose}
-          className="fixed inset-0 p-4 flex justify-center items-center bg-gray-900/75 transition-opacity"
+          className="fixed inset-0 p-4 flex justify-center items-center bg-background transition-opacity"
           aria-hidden="true"
         >
           <div className="flex sm:p-8">

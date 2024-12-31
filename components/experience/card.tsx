@@ -70,21 +70,22 @@ export const Card: React.FC<OwnProps> = (props: OwnProps) => {
   return (
     <div
       ref={ref}
-      className="grid grid-cols-1 md:grid-cols-4 max-w-7xl mx-auto mb-16 md:mb-36 job"
+      className="grid grid-cols-1 md:grid-cols-4 max-w-7xl mx-auto mb-16 md:mb-36 last-of-type:mb-0 job"
     >
       <div className="flex min-w-[300px]">
-        <Link target="_blank" className="block h-fit  mr-4" href={link}>
+        <Link target="_blank" className="block h-fit w-[69px] mr-4" href={link}>
           <Image
             priority
             src={logo}
             alt={"logo"}
-            width={69}
-            height={69}
-            className="rounded-sm"
+            width={0}
+            height={0}
+            sizes="69px"
+            className="w-[69px] h-[69px] rounded-sm"
           />
         </Link>
 
-        <div className="text-sm">
+        <div className="text-sm max-w-[225px]">
           <div className="mb-12">
             <Link
               target="_blank"
@@ -97,7 +98,7 @@ export const Card: React.FC<OwnProps> = (props: OwnProps) => {
             <p className="text-neutral-400">{address}</p>
           </div>
 
-          <ul ref={ref2}>
+          <ul ref={ref2} className="max-w-[225px]">
             {positions.map((position: Position, index: number) => (
               <li
                 key={index}

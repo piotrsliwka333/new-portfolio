@@ -61,6 +61,35 @@
           "point9": "Working on app with different envs like: LOCAL, DEV, PROD."
         }
       }
+    },
+    "education": {
+      "title": "My Education",
+      "subtitle": "Graduation",
+      "job1": {
+        "name": "Copernicus University of Information Technology and Management",
+        "totalWorkTime": "3 yrs",
+        "address": "Wrocław, Lower Silesian, Poland",
+        "positions": {
+          "position1": {
+            "name": "Degree: Bachelor of Science in Engineering",
+            "workDimension": "Part-time studies",
+            "period": "10.2020 - 09.2023  3 yrs"
+          }
+        },
+        "description": {
+          "title": "Scope of studies ",
+          "point1": "IT hardware and software use",
+          "point2": "IT systems design and implementation",
+          "point3": "Structural and object-oriented programming in high-level languages",
+          "point4": "Operating systems installation and administration",
+          "point5": "Databases design and programming",
+          "point6": "Computer network configuration and administration",
+          "point7": "Data protection against loss or unauthorised access",
+          "point8": "Computer graphics and digital image processing",
+          "point9": "Team work as part of IT projects",
+          "point10": "Learning new solutions and technologies in line with dynamically changing situation in the field of Computer Science"
+        }
+      }
     }
   },
   "nav": {

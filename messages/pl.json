@@ -61,6 +61,35 @@
           "point9": "Praca przy aplikacji składającej się z różnych środowisk jak: LOCAL, DEV, PROD."
         }
       }
+    },
+    "education": {
+      "title": "Moja Edukcja",
+      "subtitle": "Ukończenie wyższej szkoły",
+      "job1": {
+        "name": "Wyższa Szkoła Informatyki i Zarządzania 'Copernicus'",
+        "totalWorkTime": "3 lata",
+        "address": "Wrocław, Dolnyśląsk, Polska",
+        "positions": {
+          "position1": {
+            "name": "Tytuł zwodowy: inżynier",
+            "workDimension": "Studia zaoczne",
+            "period": "10.2020 - 09.2023  3 lata"
+          }
+        },
+        "description": {
+          "title": "Zakres studiów:",
+          "point1": "Wykorzystanie sprzętu i oprogramowania IT",
+          "point2": "Projektowanie i wdrażanie systemów informatycznych",
+          "point3": "Programowanie strukturalne i obiektowe w językach wysokiego poziomu",
+          "point4": "Instalacja i administracja systemami operacyjnymi",
+          "point5": "Projektowanie i programowanie baz danych",
+          "point6": "Konfiguracja i administracja siecią komputerową",
+          "point7": "Ochrona danych przed utratą lub nieautoryzowanym dostępem",
+          "point8": "Grafika komputerowa i przetwarzanie obrazów cyfrowych",
+          "point9": "Praca zespołowa w ramach projektów informatycznych",
+          "point10": "Poznawanie nowych rozwiązań i technologii zgodnych z dynamicznie zmieniającą się sytuacją w dziedzinie Informatyki"
+        }
+      }
     }
   },
   "nav": {
