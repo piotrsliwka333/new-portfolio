@@ -1,14 +1,66 @@
 {
   "home": {
-    "title": {
-      "firstPart": "Cześć, jestem <cover></cover>",
-      "name": "Piotr Śliwka",
-      "secondPart": "Zbudujmy razem dobre oprogramowanie"
+    "hero": {
+      "title": {
+        "firstPart": "Cześć, jestem <cover></cover>",
+        "name": "Piotr Śliwka",
+        "secondPart": "Zbudujmy razem dobre oprogramowanie"
+      },
+      "subtitle": "Jest to strona z moim portfolio i listą produktów, które mogę dla ciebie zbudować"
     },
-    "subtitle": "Jest to strona z moim portfolio i listą produktów, które mogę dla ciebie zbudować"
+    "experience": {
+      "title": "Professional Experience",
+      "subtitle": "Companies for which I’ve worked and responsibilities which I had",
+      "job1": {
+        "name": "PEOPLE MORE",
+        "totalWorkTime": "4 mos",
+        "address": "Wrocław, Lower Silesian, Poland",
+        "positions": {
+          "position1": {
+            "name": "Frontend Developer",
+            "workDimension": "Full time",
+            "period": "01.2024 - 04.2024  4 mos"
+          }
+        },
+        "description": {
+          "title": "Job responsibility at PeopleMore:",
+          "point1": "Creating from scratch new trading platform using React + Typescript and Material UI."
+        }
+      },
+      "job2": {
+        "name": "Virtua",
+        "totalWorkTime": "3 yrs",
+        "address": "Wrocław, Lower Silesian, Poland",
+        "positions": {
+          "position1": {
+            "name": "Frontend Internship",
+            "workDimension": "Full time",
+            "period": "07.2020 - 09.2020  3 mos"
+          },
+          "position2": {
+            "name": "Frontend Developer",
+            "workDimension": "Full time",
+            "period": "10.2020 - 06.2023  2 yrs 9 mos"
+          }
+        },
+        "description": {
+          "title": "Job responsibility at Virtua Company:",
+          "point1": "Modernization of the application structure",
+          "point2": "Implementing new features",
+          "point3": "Adding types for the app using Typescript (creating inerfaces, typing props etc.)",
+          "point4": "Writing unit tests. Migration from Enzyme to React-testing-library",
+          "point5": "Writing Integration Tests using Testcafe. Tworzenie page models.",
+          "point6": "Application development using React.",
+          "point7": "Daily contact with client from USA. (Working in kanban model).",
+          "point8": "Creating and customization components using Material UI and styled components.",
+          "point9": "Working on app with different envs like: LOCAL, DEV, PROD. "
+        }
+      }
+    }
   },
   "nav": {
     "leftSide": {
+      "logoText": "Piotr Sliwka",
       "element1": "Home",
       "element2": "Oferty",
       "element3": "O mnie",

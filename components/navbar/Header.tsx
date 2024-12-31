@@ -90,7 +90,7 @@ export function Header({ header }: Readonly<OwnProps>) {
                 sizes="100px"
                 className="h-[75%] w-auto rounded-xl mr-4"
               />
-              <span className="text-white  font-bold">Peter Sliwka</span>
+              <span className="text-white  font-bold">{header.logoText}</span>
               {/* <img
                 src={HttpClient.getStrapiMedia(header.logo.image.url)}
                 alt={header.logo.image.alternativeText || 'not provided'}

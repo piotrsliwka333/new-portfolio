@@ -4,11 +4,11 @@ import ShootingStars from "@/components/decorations/shooting-star";
 import StarBackground from "@/components/decorations/star-background";
 import { Heading } from "@/components/elements/heading";
 import { Subheading } from "@/components/elements/subheading";
-import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import "./Hero.css";
+import Link from "next/link";
 
 export function Hero() {
   const [dynamicText, setDynamicText] = useState<string>("");
@@ -16,7 +16,7 @@ export function Hero() {
   const [dynamicTextTitleSecondPart, setDynamicTextTitleSecondPart] =
     useState<string>("");
   const [dynamicTextSubtitle, setDynamicTextSubtitle] = useState<string>("");
-  const t = useTranslations("home");
+  const t = useTranslations("home.hero");
 
   useEffect(() => {
     function sleep(ms: number) {
@@ -129,7 +129,7 @@ export function Hero() {
           {t("subtitle")}
         </Subheading>
       </div>
-      <Link className="smooth-appear-arrow" href="/about-me">
+      <Link className="smooth-appear-arrow" href="#experience">
         <svg
           className="animate-bounce w-8 h-8  from-neutral-800 via-white to-white"
           fill="none"

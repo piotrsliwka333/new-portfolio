@@ -1,0 +1,22 @@
+.point {
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  left: calc(-34.5px - 16px);
+  top: 0;
+  @apply bg-neutral-400 rounded-full translate-y-1/2 translate-x-[-50%];
+}
+
+.job .position .point-dash {
+  max-height: 75px;
+  overflow: hidden;
+}
+
+.job .position:last-of-type .point-dash {
+  max-height: 150px;
+}
+
+.job:last-of-type .position:last-of-type .point-dash {
+  height: 0px;
+  display: none;
+}

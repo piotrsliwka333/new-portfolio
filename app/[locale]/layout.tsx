@@ -38,6 +38,7 @@ export default async function RootLayout({
   const messages = await getMessages({ locale });
 
   const header: HeaderType = {
+    logoText: t("leftSide.logoText"),
     mainLinks: [
       {
         id: 1,
@@ -84,7 +85,7 @@ export default async function RootLayout({
   };
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="scroll-smooth">
       <body
         className={cn(inter.className, "bg-charcoal antialiased h-full w-full")}
       >
