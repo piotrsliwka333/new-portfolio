@@ -58,10 +58,13 @@ export const Card: React.FC<OwnProps> = (props: OwnProps) => {
     damping: 90,
   });
 
-  const height = useSpring(useTransform(scrollYProgress, [0, 0.1], [0, 150]), {
-    stiffness: 500,
-    damping: 90,
-  });
+  const height = useSpring(
+    useTransform(secondScrollYProgress, [0, 0.6], [0, 150]),
+    {
+      stiffness: 500,
+      damping: 90,
+    }
+  );
 
   useMotionValueEvent(width, "change", (latest) => {});
   return (
