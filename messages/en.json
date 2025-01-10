@@ -90,6 +90,10 @@
           "point10": "Learning new solutions and technologies in line with dynamically changing situation in the field of Computer Science"
         }
       }
+    },
+    "techStack": {
+      "title": "My Tech Stack",
+      "subtitle": "List of framworks, languages on which I worked and I can work on"
     }
   },
   "nav": {

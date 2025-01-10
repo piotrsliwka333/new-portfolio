@@ -10,6 +10,8 @@ export default {
     extend: {
       colors: {
         primary: "var(--primary)",
+        charcoal: "#08090A",
+        lightblack: "#1C1C1C",
         // secondary: "var(--secondary)",
         secondary: "#E6E6E6",
         muted: "var(--neutral-200)",

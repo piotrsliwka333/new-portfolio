@@ -21,6 +21,12 @@ export default function Modal(props: OwnProps) {
     mouseY.set(clientY - top);
   }
 
+  const preventPropagation = (
+    event: ReactMouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    event.stopPropagation();
+  };
+
   return (
     <>
       <div
@@ -34,7 +40,10 @@ export default function Modal(props: OwnProps) {
           className="fixed inset-0 p-4 flex justify-center items-center bg-background transition-opacity"
           aria-hidden="true"
         >
-          <div className="flex sm:p-8">
+          <div
+            className="flex sm:p-8"
+            onClick={(event) => preventPropagation(event)}
+          >
             <div
               className="group p-8 rounded-md border border-neutral-800 bg-neutral-950  relative z-40 "
               onMouseMove={handleMouseMove}

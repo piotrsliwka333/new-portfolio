@@ -90,6 +90,10 @@
           "point10": "Poznawanie nowych rozwiązań i technologii zgodnych z dynamicznie zmieniającą się sytuacją w dziedzinie Informatyki"
         }
       }
+    },
+    "techStack": {
+      "title": "Mój Tech Stack",
+      "subtitle": "Lista frameworków, języków z którymi pracowałem i z którymi pracować mogę"
     }
   },
   "nav": {

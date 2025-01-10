@@ -1,5 +1,6 @@
 import { Experience } from "@/components/experience/experience";
 import { Hero } from "@/components/Hero";
+import { TechStack } from "@/components/tech-stack";
 import { IconSchool, IconSettings } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -108,6 +109,7 @@ export default async function Home() {
         subtitle={tEducation("subtitle")}
         icon={<IconSchool className="h-6 w-6 text-white" />}
       />
+      <TechStack />
     </>
   );
 }
