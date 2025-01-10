@@ -6,6 +6,8 @@ import { Container } from "./container";
 import { Heading } from "./elements/heading";
 import { Subheading } from "./elements/subheading";
 import { FeatureIconContainer } from "./feature-icon-container";
+import { memo } from "react";
+import { SparklesCore } from "./ui/sparkles";
 
 export const TechStack = () => {
   const t = useTranslations("home.techStack");
@@ -111,7 +113,20 @@ export const TechStack = () => {
       <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
         <IconRocket className="h-6 w-6 text-secondary" />
       </FeatureIconContainer>
-      <Heading className="pt-4">{t("title")}</Heading>
+      <Heading className="pt-4 relative">
+        {t("title")}
+        <div className="absolute left-1/2 -translate-x-1/2 top-[20px] sm:top-[18px] -z-10 w-[230px] sm:w-[270px] h-[35px] sm:h-[50px]">
+          <MemoizedSparklesCore
+            id="new-particles"
+            background="transparent"
+            minSize={0.4}
+            maxSize={1}
+            particleDensity={600}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+          />
+        </div>
+      </Heading>
       <Subheading className="max-w-3xl mx-auto mb-32">
         {t("subtitle")}
       </Subheading>
@@ -226,3 +241,5 @@ export const TechStack = () => {
     // </GradientContainer>
   );
 };
+
+const MemoizedSparklesCore = memo(SparklesCore);
