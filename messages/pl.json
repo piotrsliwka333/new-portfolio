@@ -94,6 +94,33 @@
     "techStack": {
       "title": "Mój Tech Stack",
       "subtitle": "Lista frameworków, języków z którymi pracowałem i z którymi pracować mogę"
+    },
+    "listOfProjects": {
+      "title": "Lista Projektów",
+      "subtitle": "lista zrealizowanych projektów oraz projekty nad, którymi działałem pracując dla poszcególnych firm",
+      "projects": {
+        "linkToFrontendProd": "Link do Frontend (Prod Env): <link>Link</link>",
+        "linkToBackendProd": "Link do Backend (Prod Env): <link>Link</link>",
+        "linkToFrontendDev": "Link do Frontend (Dev Env): <link>Link</link>",
+        "linkToBackendDev": "Link do Backend (Dev Env): <link>Link</link>",
+        "linkToFigma": "Link do Figmy: <link>Link</link>",
+        "linkToFrontendRepo": "Link do Repozytorium Frontend: <link>Link</link>",
+        "linkToBackendRepo": "Link do Repozytorium Backend: <link>Link</link>",
+        "project1": {
+          "title": "ChristianSpotMovies",
+          "description": "Platforma VOD z filmami chrześcijańskimi. Aplikacja, w której możesz wypożyczyć film na 48 godzin."
+        },
+        "project2": {
+          "title": "Aplikacja do śledzenia paczek",
+          "description": "Pracując dla Virtua odpowiadałem za tworzenie aplikacji do śledzenia przesyłek dla jednego z klientów."
+        },
+        "project3": {
+          "title": "Blog",
+          "description": "Aplikacja blogowa oparta na headless CMS przy użyciu Amazon Web Services",
+          "extraInfo1": "Email: t86350219@gmail.com",
+          "extraInfo2": "Hasło: Test1234567$"
+        }
+      }
     }
   },
   "nav": {
