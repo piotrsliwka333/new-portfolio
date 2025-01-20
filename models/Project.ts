@@ -5,7 +5,7 @@ export interface Project {
   title: string;
   description: string;
   imageUrl: string;
-  linkToFrontendProd?: string;
+  linkToFrontendProd: string;
   linkToBackendProd?: string;
   linkToFrontendDev?: string;
   linkToBackendDev?: string;
