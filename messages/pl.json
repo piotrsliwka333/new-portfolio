@@ -1,7 +1,9 @@
 {
   "shared": {
     "buttons": {
-      "showResponsibilities": "Pokaż Zakres Obowiązków"
+      "showResponsibilities": "Pokaż Zakres Obowiązków",
+      "sendQuestion": "Wyślij Zapytanie",
+      "contact": "Kontakt"
     }
   },
   "home": {
@@ -119,6 +121,69 @@
           "description": "Aplikacja blogowa oparta na headless CMS przy użyciu Amazon Web Services",
           "extraInfo1": "Email: t86350219@gmail.com",
           "extraInfo2": "Hasło: Test1234567$"
+        }
+      }
+    },
+    "pricing": {
+      "title": "Cennik",
+      "subtitle": "Cena za projekty, aplikacje webowe, blogi, sklepy, które mogę dla Ciebie zrealizować lub moja cena za różne zlecenia jak partnerstwo w projekcie czy umowa o pracę",
+      "whatInOffer": "What in Offer",
+      "examples": "Examples",
+      "plans": {
+        "plan1": {
+          "title": "Website",
+          "points": {
+            "point1": "Creating custom design on Figma or PDF",
+            "point2": "Coding project",
+            "point3": "Domain Connection",
+            "point4": "SEO",
+            "point5": "Setting up project on hosting server",
+            "point6": "All programing code and design mockups are transfered to you"
+          },
+          "examples": {
+            "example1": "Blog",
+            "example2": "Website as a Company business card"
+          }
+        },
+        "plan2": {
+          "title": "Shop",
+          "points": {
+            "point1": "Creating custom design on Figma or PDF or using ready templates",
+            "point2": "Solution build upon one of the following technologies: Shopware or Magento or Stripe",
+            "point3": "Domain Connection",
+            "point4": "SEO",
+            "point5": "All programing code and design mockups are transfered to you"
+          },
+          "examples": {
+            "example1": "Online Shop to Sell your physical products"
+          }
+        },
+        "plan3": {
+          "title": "Web Application",
+          "points": {
+            "point1": "Creating custom design on Figma or PDF or using ready templates",
+            "point2": "Creating Frontend",
+            "point3": "Creating Backend",
+            "point4": "Domain Connection",
+            "point5": "Setting up hosting",
+            "point6": "SEO",
+            "point7": "All programing code and design mockups are transfered to you"
+          },
+          "examples": {
+            "example1": "More complex applications with bigger business logic to cover",
+            "example2": "Applications like: infakt, tracking parcel app, accountant app, catering app etc."
+          }
+        },
+        "plan4": {
+          "title": "Worker contract, additional work",
+          "points": {
+            "point1": "Normal employment contract",
+            "point2": "B2B Contract"
+          },
+          "examples": {
+            "example1": "Having me as a partner in project",
+            "example2": "Extra work. For instance: small updates to your current website"
+          }
         }
       }
     }

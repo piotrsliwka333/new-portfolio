@@ -1,11 +1,9 @@
-import { IconSettings } from "@tabler/icons-react";
+import { ReactNode } from "react";
 import { Container } from "../container";
 import { Heading } from "../elements/heading";
 import { Subheading } from "../elements/subheading";
 import { FeatureIconContainer } from "../feature-icon-container";
-import { useTranslations } from "next-intl";
 import { Card } from "./card";
-import { ReactNode } from "react";
 
 interface OwnProps {
   jobs: Job[];

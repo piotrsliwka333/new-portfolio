@@ -11,11 +11,13 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React, { MouseEvent as ReactMouseEvent, useRef } from "react";
+import React, { MouseEvent as ReactMouseEvent, useRef, useState } from "react";
 import Beam from "../beam";
 import { CanvasRevealEffect } from "../ui/canvas-reveal-effect";
 import "./card.css";
-import Portal from "./portal";
+import Portal from "../elements/portal";
+import { Button } from "../elements/button";
+import { useTranslations } from "next-intl";
 
 interface OwnProps {
   job: Job;
@@ -26,6 +28,11 @@ export const Card: React.FC<OwnProps> = (props: OwnProps) => {
   const { name, link, totalWorkTime, address, positions, description, logo } =
     job;
 
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal = () => setShowModal(false);
+
+  const t = useTranslations("shared.buttons");
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -120,7 +127,27 @@ export const Card: React.FC<OwnProps> = (props: OwnProps) => {
               </li>
             ))}
           </ul>
-          <Portal description={description} />
+          <Button
+            variant={"primary"}
+            onClick={() => setShowModal(true)}
+            className="mt-8 md:hidden"
+          >
+            {t("showResponsibilities")}
+          </Button>
+          <Portal
+            fancyBackground
+            onClose={handleCloseModal}
+            showModal={showModal}
+          >
+            <p className="text-xl font-bold relative z-20 mt-2">
+              {description.title}
+            </p>
+            <ul className="list-disc list-inside text-neutral-400 mt-4 relative z-20">
+              {description.points.map((elements: string) => (
+                <li key={elements}>{elements}</li>
+              ))}
+            </ul>
+          </Portal>
         </div>
       </div>
       <motion.div

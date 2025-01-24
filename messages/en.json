@@ -1,7 +1,10 @@
 {
   "shared": {
     "buttons": {
-      "showResponsibilities": "Show Responsibilities"
+      "showResponsibilities": "Show Responsibilities",
+      "sendQuestion": "Send Question",
+      "contact": "Contact Me",
+      "submit": "Submit"
     }
   },
   "home": {
@@ -119,6 +122,105 @@
           "description": "Blog app build upon headless CMS using Amazon Web Services",
           "extraInfo1": "Email: t86350219@gmail.com",
           "extraInfo2": "Password: Test1234567$"
+        }
+      }
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Price for projects, web aps, blog, shops which I can realize for you or my price for a different jobs like partner in project, job contract agreement",
+      "whatInOffer": "What in Offer",
+      "examples": "Examples",
+      "card": {},
+      "form": {
+        "title": "Contact Form",
+        "description": "Write down your question below, or just describe a little bit your project and I will contact with to estimate costs of the work or I will organize a call/meeting with you where you will be able to describe your plan for a project in details :)",
+        "alerts": {
+          "error": "Some problem appear during submiting your form. Try once again ",
+          "success": "Your form has been submited successfuly"
+        },
+        "inputs": {
+          "input1": {
+            "label": "Project Type"
+          },
+          "input2": {
+            "label": "Full Name",
+            "placeholder": "Peter Sliwka",
+            "errors": {
+              "required": "Enter a full name"
+            }
+          },
+          "input3": {
+            "label": "Email Address",
+            "placeholder": "yourEmail@gmail.com",
+            "errors": {
+              "required": "Enter an email",
+              "invalid": "Enter an valid email"
+            }
+          },
+          "input4": {
+            "label": "Message",
+            "placeholder": "Type your message",
+            "errors": {
+              "required": "Enter a message"
+            }
+          }
+        }
+      },
+      "plans": {
+        "plan1": {
+          "title": "Website",
+          "points": {
+            "point1": "Creating custom design on Figma or PDF",
+            "point2": "Coding project",
+            "point3": "Domain Connection",
+            "point4": "SEO",
+            "point5": "Setting up project on hosting server",
+            "point6": "All programing code and design mockups are transfered to you"
+          },
+          "examples": {
+            "example1": "Blog",
+            "example2": "Website as a Company business card"
+          }
+        },
+        "plan2": {
+          "title": "Shop",
+          "points": {
+            "point1": "Creating custom design on Figma or PDF or using ready templates",
+            "point2": "Solution build upon one of the following technologies: Shopware or Magento or Stripe",
+            "point3": "Domain Connection",
+            "point4": "SEO",
+            "point5": "All programing code and design mockups are transfered to you"
+          },
+          "examples": {
+            "example1": "Online Shop to Sell your physical products"
+          }
+        },
+        "plan3": {
+          "title": "Web Application",
+          "points": {
+            "point1": "Creating custom design on Figma or PDF or using ready templates",
+            "point2": "Creating Frontend",
+            "point3": "Creating Backend",
+            "point4": "Domain Connection",
+            "point5": "Setting up hosting",
+            "point6": "SEO",
+            "point7": "All programing code and design mockups are transfered to you"
+          },
+          "examples": {
+            "example1": "More complex applications with bigger business logic to cover",
+            "example2": "Applications like: infakt, tracking parcel app, accountant app, catering app etc."
+          }
+        },
+        "plan4": {
+          "title": "Worker contract, additional work",
+          "points": {
+            "point1": "Normal employment contract",
+            "point2": "B2B Contract"
+          },
+          "examples": {
+            "example1": "Having me as a partner in project",
+            "example2": "Extra work. For instance: small updates to your current website"
+          }
         }
       }
     }

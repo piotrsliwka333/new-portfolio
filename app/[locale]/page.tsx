@@ -1,6 +1,7 @@
 import { Experience } from "@/components/experience/experience";
 import { Hero } from "@/components/Hero";
 import { ListOfProjects } from "@/components/list-of-projects";
+import { Pricing } from "@/components/pricing/pricing";
 import { TechStack } from "@/components/tech-stack";
 import { IconSchool, IconSettings } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
@@ -112,6 +113,7 @@ export default async function Home() {
       />
       <TechStack />
       <ListOfProjects />
+      <Pricing />
     </>
   );
 }
